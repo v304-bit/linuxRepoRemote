@@ -1,3 +1,6 @@
 #!/bin/bash
-sudo apt-get install apache2 -y
-sudo systemctl start apache2
+# Install Apache (called httpd in RHEL-based distros)
+sudo yum install httpd -y
+
+# Start the Apache service
+sudo systemctl start httpd
